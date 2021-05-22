@@ -4,8 +4,8 @@ import java.io.*;
 
 public class LowerCaseInputStream extends FilterInputStream { // FilterInputStream is an abstract decorator of super class InputStream
 
-    public LowerCaseInputStream(InputStream inputStream) {
-        super(inputStream);
+    public LowerCaseInputStream(InputStream in) {
+        super(in);
     }
 
     public int read() throws IOException {

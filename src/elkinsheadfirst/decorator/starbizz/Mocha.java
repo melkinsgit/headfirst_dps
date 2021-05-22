@@ -3,8 +3,9 @@ package elkinsheadfirst.decorator.starbizz;
 public class Mocha extends CondimentsDecorator {
     Beverage beverage; // an instance variable holds the beverage we are wrapping - that means we can wrap a coffee or a condiment!
 
+    // whatever we are wrapping will be passed - decorator 'has a' superclass instance
     public Mocha(Beverage beverage) {
-        this.beverage = beverage; // whatever we are wrapping will be passed
+        this.beverage = beverage;
     }
 
     @Override
